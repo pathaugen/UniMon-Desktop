@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>UniMon Desktop</title>
+		
+		<link rel="stylesheet" href="../../external/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/framework.css">
+		
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="../../external/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+		<script src="../js/framework.js"></script>
+		<script>if (window.module) module = window.module;</script>
+		
+		<script>
+			/* alert( "JS Alert Test!" ); */
+		</script>
+	</head>
+	<body>
+		
+		
+		<div id="toolbar">
+			<nav id="nav">
+				<a href="" class="toggle-sidebar"><i class="fa fa-times fa-fw"></i></a> <!-- fa-bars / fa-times -->
+			</nav>
+			<div id="user">
+				<a href="checkin.html"><i class="fa fa-home fa-fw"></i></a>
+				
+				<a href="attendees.html"><i class="fa fa-user fa-fw"></i> Patrick Haugen</a>
+				@ <a href="http://www.productionmediadesign.com/">Production Media Design</a>
+				
+				<a href=""><i class="fa fa-sign-out fa-fw"></i></a>
+				
+			</div>
+			<div id="corner">
+				<a href="" class=""><i class="fa fa-bell-o fa-fw"></i></a>
+				<a href="" class="toggle-fullscreen"><i class="fa fa-arrows-alt fa-fw" data-fullscreen="false"></i></a>
+			</div>
+			<div id="close">
+				<a href="" class="close-application"><i class="fa fa-times fa-fw"></i></a>
+			</div>
+		</div>
+		
+		
+		<div id="sidebar">
+			<h2>UniMon Desktop</h2>
+			<ul>
+				<li><a href="about.html"><i class="fa fa-info-circle fa-fw" aria-hidden="true" style="color:blue;"></i> About Us</a></li>
+				<li><a href="new.html"><i class="fa fa-gift fa-fw" aria-hidden="true" style="color:yellow;"></i> What's New</a></li>
+				<li><a href="help.html"><i class="fa fa-question-circle fa-fw" aria-hidden="true" style="color:red;"></i> Help</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="main">
+			<h1>UniMon Desktop</h1>
+		</div>
+		
+		
+		<div id="footer">
+			We are using <a href="https://nodejs.org/en/">node.js</a> (<script>document.write(process.versions.node)</script>),
+			<a href="https://www.chromium.org/Home">Chromium</a> (<script>document.write(process.versions.chrome)</script>),
+			<a href="https://developers.google.com/v8/">v8</a> (<script>document.write(process.versions.v8)</script>),
+			and <a href="http://electron.atom.io/">Electron</a> (<script>document.write(process.versions.electron)</script>).
+		</div>
+		
+		
+	</body>
+</html>
