@@ -1,0 +1,38 @@
+<html><head>
+<style type="text/css">
+button { cursor: pointer; }
+::-webkit-scrollbar { display: none; }
+</style><script>
+const {ipcRenderer} = require('electron')
+</script></head><body style="margin:0;-webkit-app-region:drag;">
+	
+	<div style="position:fixed;top:0;right:0;left:0;">
+		<div style="text-align:center;">
+			<img src="../images/productionmediadesign1.png" />
+		</div>
+	</div>
+	
+	<div style="margin-top:100px;">
+		<div style="text-align:center;">
+			<h1 style="margin:0;color:white;text-shadow: 0 0 5px black;">Current Time: <span id="time">17:50:12</span></h1>
+		</div>
+		<div style="background-color:white;padding:10px;border-radius:10px;height:200px;overflow:scroll;">
+			<h1 style="margin:0;">This is News</h1>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis leo nulla. Nulla sed ex sit amet nibh rutrum posuere sed eget erat. Nullam facilisis nisi sed euismod scelerisque. In sed orci sit amet quam convallis feugiat. Suspendisse sagittis ante est, eget egestas odio rhoncus a. Nunc vulputate libero non maximus aliquam. Praesent at felis nec eros feugiat egestas. Integer vehicula enim eget ante hendrerit, ac blandit urna eleifend. Aliquam vitae porta diam. Fusce efficitur sagittis erat, ac porta elit venenatis a.</p>
+				<p>Maecenas et erat eu orci lobortis suscipit eget sed sem. Phasellus vehicula, elit a bibendum venenatis, massa augue gravida nulla, at luctus enim elit in tortor. Donec in aliquam est. In hac habitasse platea dictumst. Donec a mi eget est varius aliquam. Nulla varius ligula urna, in porta nisl ultrices at. Maecenas dapibus scelerisque odio eu aliquet. Nullam maximus aliquam purus, sit amet consequat arcu molestie luctus. Curabitur sem sem, pulvinar eget lacus in, imperdiet vehicula metus. Donec dictum est vel tortor imperdiet, nec ultrices mauris fermentum. Nulla vel finibus mi, id aliquet orci. Aliquam consectetur urna sit amet urna ullamcorper tincidunt. Integer tempor convallis augue, quis rhoncus ante auctor condimentum. Vestibulum dapibus ac augue et posuere. Nullam sit amet dolor eget dolor euismod dignissim nec sed enim.</p>
+				<p>Sed elementum venenatis tellus a fermentum. Duis pellentesque vehicula commodo. Pellentesque vel dapibus ipsum, maximus ullamcorper nisi. Mauris leo massa, ultricies a tempus eu, pulvinar vel tortor. Cras ultricies congue laoreet. Suspendisse porttitor orci nec pretium hendrerit. Suspendisse condimentum nunc risus, vel luctus sapien faucibus in. Etiam consequat cursus ipsum, et vestibulum magna dapibus nec. Cras sem lectus, viverra vel porttitor ultrices, aliquet eu diam. Morbi eleifend nulla vitae enim fermentum, a eleifend ligula auctor. Integer porta molestie metus, eu egestas risus ullamcorper quis.</p>
+				<p>Vivamus massa quam, dapibus nec augue quis, efficitur volutpat ipsum. Nunc consectetur pretium consequat. Suspendisse maximus eget nunc ut lacinia. Nam ante ex, hendrerit eu condimentum non, molestie ac libero. In odio justo, consectetur in elementum ac, facilisis pretium dui. In ut finibus tellus, ut cursus turpis. Donec consectetur eget orci vel commodo.</p>
+				<p>Phasellus a augue in nulla ornare tempus in quis ligula. Nunc vehicula vehicula pellentesque. Quisque sem odio, interdum vel malesuada id, commodo at odio. Aenean ut pellentesque velit, sit amet ullamcorper ligula. Mauris pulvinar sollicitudin nisi, sed interdum nunc sagittis ut. Ut id ligula condimentum, fringilla augue sit amet, laoreet neque. Morbi rhoncus fringilla augue in auctor. Pellentesque vel tristique mauris, in egestas urna.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div style="-webkit-app-region:no-drag;text-align:center;">
+		<button>More News</button>
+		<div style="margin-top:10px;">
+			<button onclick="ipcRenderer.send('close-splash', 'true');" style="font-size:2.0em;">Launch Application</button>
+		</div>
+	</div>
+	
+</body></html>

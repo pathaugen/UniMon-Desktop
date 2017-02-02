@@ -1,0 +1,138 @@
+
+html,
+body {
+	background-color:		#2e2c29;
+	margin:					0;
+}
+body {
+	/*-webkit-app-region:		drag;*/
+	
+	font-family:			sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+ul {
+	margin:					0;
+}
+a,
+button,
+input {
+	/*-webkit-app-region:		no-drag;*/
+}
+button {
+	cursor:					pointer;
+}
+
+
+#toolbar {
+	-webkit-app-region:		drag;
+	
+	position:				fixed;
+	top:					0;
+	right:					0;
+	left:					0;
+	
+	height:					30px;
+	line-height:			30px;
+	
+	background-color:		darkgrey;
+	color:					white;
+}
+#toolbar a,
+#toolbar button,
+#toolbar input {
+	-webkit-app-region:		no-drag;
+}
+#toolbar a {
+	color:					white;
+	text-decoration:		none;
+}
+#toolbar a:hover {
+	font-weight:			bold;
+}
+#toolbar #nav {
+	background-color:		blue;
+	
+	font-size:				26px;
+	
+	position:				fixed;
+	top:					0;
+	left:					0;
+}
+#toolbar #user {
+	margin-left:			40px;
+}
+#toolbar #corner {
+	/*line-height:			normal;*/
+	/*font-size:			26px;*/
+	
+	position:				fixed;
+	top:					0;
+	right:					40px;
+}
+#toolbar #corner button {
+	height:					30px;
+}
+#toolbar #close {
+	background-color:		red;
+	
+	/*line-height:			normal;*/
+	font-size:				26px;
+	
+	position:				fixed;
+	top:					0;
+	right:					0;
+}
+
+
+#header {
+}
+
+
+#sidebar {
+	background-color:		lightgrey;
+	
+	position:				fixed;
+	top:					30px;
+	bottom:					30px;
+	left:					0;
+	
+	width:					200px;
+}
+
+
+#main {
+	overflow:				scroll;
+	
+	color:					white;
+	
+	position:				fixed;
+	top:					30px;
+	right:					0;
+	bottom:					30px;
+	left:					200px;
+	
+	padding:				20px;
+}
+
+
+#footer {
+	-webkit-app-region:		drag;
+	
+	text-align:				center;
+	font-size:				0.8em;
+	
+	position:				fixed;
+	right:					0;
+	bottom:					0;
+	left:					0;
+	
+	height:					30px;
+	line-height:			30px;
+	
+	background-color:		darkgrey;
+	color:					white;
+}
+#footer a {
+	-webkit-app-region:		no-drag;
+}
+
